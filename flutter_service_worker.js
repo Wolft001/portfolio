@@ -8,7 +8,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "693635b5258fe5f1cda720cf224f158c
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "0db35ae7a415370b89e807027510caf0",
-"assets/NOTICES": "767b554a0d5bb63471833d32e09cc58d",
+"assets/NOTICES": "c6ffa5d3851d5e83fb3aa8b5f82e7152",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
@@ -27,9 +27,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "693635b5258fe5f1cda720cf224f158c
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "54a53262a89bb039bfa3961781fdfaaa",
-"/": "54a53262a89bb039bfa3961781fdfaaa",
-"main.dart.js": "01676c6331dbce1fec35404f3bb8e271",
+"index.html": "c88cd907cebaa8d920409206d05350c9",
+"/": "c88cd907cebaa8d920409206d05350c9",
+"main.dart.js": "722ec4e8b56a424e633b71531620ca4b",
 "manifest.json": "285e4d94a5c639b36050e2fb3cf4a018",
 "version.json": "3953d7e04f1431318188c1ee6774e8eb"};
 // The application shell files that are downloaded before a service worker can
@@ -121,7 +121,7 @@ self.addEventListener("fetch", (event) => {
   if (key.indexOf('?v=') != -1) {
     key = key.split('?v=')[0];
   }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/') || key == '') {
     key = '/';
   }
   // If the URL is not the RESOURCE list then return to signal that the
