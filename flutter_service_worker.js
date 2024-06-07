@@ -3,35 +3,43 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "693635b5258fe5f1cda720cf224f158c",
-"assets/AssetManifest.bin.json": "69a99f98c8b1fb8111c5fb961769fcd8",
-"assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
+const RESOURCES = {"version.json": "009c9e65172e010890f7f65fde438006",
+"index.html": "5ad52214ea5bde3d93a1af9f869146a2",
+"/": "5ad52214ea5bde3d93a1af9f869146a2",
+"main.dart.js": "1923e5b2bcc31b5051797e555e63da85",
+"flutter.js": "c71a09214cb6f5f8996a531350400a9a",
+"favicon.png": "3cdd6e2695163a138f552db8bc757de9",
+"icons/Icon-192.png": "c99ce17773bbbd81e3354117cba10a34",
+"icons/Icon-maskable-192.png": "c99ce17773bbbd81e3354117cba10a34",
+"icons/Icon-maskable-512.png": "64c9d3492698e3908b6e02e8e97bb373",
+"icons/Icon-512.png": "64c9d3492698e3908b6e02e8e97bb373",
+"manifest.json": "d40c47d1c161f94dbcb13094d37f1f55",
+"assets/AssetManifest.json": "b9911fc9bbcc4843ca138ee02e4f2bb0",
+"assets/NOTICES": "8311b7a0478cd220839edbe4dd7c23cd",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "0db35ae7a415370b89e807027510caf0",
-"assets/NOTICES": "c6ffa5d3851d5e83fb3aa8b5f82e7152",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
+"assets/AssetManifest.bin.json": "182439b496fec56b97f170d226ba01b7",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "e986ebe42ef785b27164c36a9abc7818",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
-"canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
-"canvaskit/canvaskit.js.symbols": "38cba9233b92472a36ff011dc21c2c9f",
-"canvaskit/canvaskit.wasm": "3d2a2d663e8c5111ac61a46367f751ac",
-"canvaskit/chromium/canvaskit.js": "43787ac5098c648979c27c13c6f804c3",
-"canvaskit/chromium/canvaskit.js.symbols": "4525682ef039faeb11f24f37436dca06",
-"canvaskit/chromium/canvaskit.wasm": "f5934e694f12929ed56a671617acd254",
+"assets/AssetManifest.bin": "b2899a52643b18cfe56578240bde0ea0",
+"assets/fonts/MaterialIcons-Regular.otf": "307a5fa911b1448fcaf361208d92752e",
+"assets/assets/founder/20240526_160546.png": "f3d230e12768400f101f0deb7c133596",
+"assets/assets/workexp/android-chrome-512x512.png": "a2baec2eb3801be13418b6034c7ae577",
+"assets/assets/20240515_213817.jpg": "1ad707cdcf03e0d919e196a03ea56fb7",
+"assets/assets/projects/Untitled%2520design_20240526_151210_0000.png": "c482fc13b4ca51e7baa172d7869361f3",
+"assets/assets/social/1000014250-removebg-preview.png": "de9fcfe4013716acd0edaf4dfec0248a",
+"assets/assets/social/github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png": "89c2c0674bdba3d61daf6b1b1e5e82b5",
+"assets/assets/social/pngwing.com.png": "30fa0886f8b6840a53f5deb91f9722f5",
+"assets/assets/logo/120168617-removebg-preview.png": "7f7e31d443adaa548d55e10d74cb6da3",
 "canvaskit/skwasm.js": "445e9e400085faead4493be2224d95aa",
 "canvaskit/skwasm.js.symbols": "741d50ffba71f89345996b0aa8426af8",
+"canvaskit/canvaskit.js.symbols": "38cba9233b92472a36ff011dc21c2c9f",
 "canvaskit/skwasm.wasm": "e42815763c5d05bba43f9d0337fa7d84",
-"canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
-"favicon.png": "67e1b87467ea517464de519bf3f77989",
-"flutter.js": "c71a09214cb6f5f8996a531350400a9a",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "c88cd907cebaa8d920409206d05350c9",
-"/": "c88cd907cebaa8d920409206d05350c9",
-"main.dart.js": "722ec4e8b56a424e633b71531620ca4b",
-"manifest.json": "285e4d94a5c639b36050e2fb3cf4a018",
-"version.json": "3953d7e04f1431318188c1ee6774e8eb"};
+"canvaskit/chromium/canvaskit.js.symbols": "4525682ef039faeb11f24f37436dca06",
+"canvaskit/chromium/canvaskit.js": "43787ac5098c648979c27c13c6f804c3",
+"canvaskit/chromium/canvaskit.wasm": "f5934e694f12929ed56a671617acd254",
+"canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
+"canvaskit/canvaskit.wasm": "3d2a2d663e8c5111ac61a46367f751ac",
+"canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
@@ -121,7 +129,7 @@ self.addEventListener("fetch", (event) => {
   if (key.indexOf('?v=') != -1) {
     key = key.split('?v=')[0];
   }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/') || key == '') {
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
   // If the URL is not the RESOURCE list then return to signal that the
