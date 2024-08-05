@@ -78219,7 +78219,7 @@ A.a4z.prototype={
 Yc(a){$.akf().n(0,this,a)}}
 A.H6.prototype={
 M(a){var s=A.zf(null,A.ayI(B.a0,B.Ht),!0)
-return new A.wJ(A.av(["/",new A.a3I(),"/works",new A.a3J()],t.N,t.Ab),"/works","Wolfrige",s,!1,null)}}
+return new A.wJ(A.av(["/",new A.a3I(),"/works",new A.a3J()],t.N,t.Ab),"/","Wolfrige",s,!1,null)}}
 A.a3I.prototype={
 $1(a){return new A.nx(null)},
 $S:460}
