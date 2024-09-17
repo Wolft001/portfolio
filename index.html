@@ -8,7 +8,7 @@
   <meta name="keywords" content="Flutter, Developer, Portfolio, AI, ML, UI/UX, Mobile App Development, Web Development, Wolfrige Tech">
   <meta name="author" content="Wolfrige Tech">
   <meta name="robots" content="index, follow">
-  
+
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:title" content="Wolfrige Tech - Flutter Developer Portfolio">
   <meta property="og:description" content="Explore the portfolio of Wolfrige Tech, featuring projects in AI, ML, and UI/UX design.">
@@ -16,12 +16,15 @@
   <meta property="og:url" content="https://wolfrigetech.co.in">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  
+
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Wolfrige Tech - Flutter Developer Portfolio">
   <meta name="twitter:description" content="Explore the portfolio of Wolfrige Tech, featuring projects in AI, ML, and UI/UX design.">
   <meta name="twitter:image" content="https://wolfrigetech.co.in/assets/logo/120168617-removebg-preview.png">
+  
+  <!-- Social Profiles -->
+  <meta property="og:social:instagram" content="https://www.instagram.com/wolfrige?igsh=dnAzdXpiamgwMHVo">
   
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,19 +35,44 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
+  <!-- Set the base URL for GitHub Pages -->
   <base href="/">
   <title>Wolfrige Tech - Flutter Developer Portfolio</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2889717826";
-  </script>
-  <script src="flutter.js" defer></script>
-</head>
-<body>
-  <script>
+    const serviceWorkerVersion = "3293041058";
+
+    function updateMetaTags() {
+      const path = window.location.hash;
+
+      let title = "Wolfrige Tech - Flutter Developer Portfolio";
+      let description = "Wolfrige Tech - Expert Flutter Developer Portfolio showcasing projects in AI, ML, UI/UX. Explore our innovative mobile and web app solutions.";
+      let keywords = "Flutter, Developer, Portfolio, AI, ML, UI/UX, Mobile App Development, Web Development, Wolfrige Tech";
+      let url = "https://wolfrigetech.co.in";
+      
+      if (path === "#/works") {
+        title = "Wolfrige Tech - Works";
+        description = "Explore the works and projects of Wolfrige Tech, including AI, ML, and UI/UX designs.";
+        keywords = "Flutter, Works, Projects, AI, ML, UI/UX, Wolfrige Tech";
+        url = "https://wolfrigetech.co.in/#/works";
+      }
+
+      document.title = title;
+      document.querySelector('meta[name="description"]').setAttribute("content", description);
+      document.querySelector('meta[name="keywords"]').setAttribute("content", keywords);
+      document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+      document.querySelector('meta[property="og:description"]').setAttribute("content", description);
+      document.querySelector('meta[property="og:url"]').setAttribute("content", url);
+      document.querySelector('meta[name="twitter:title"]').setAttribute("content", title);
+      document.querySelector('meta[name="twitter:description"]').setAttribute("content", description);
+    }
+
+    window.addEventListener('hashchange', updateMetaTags);
     window.addEventListener('load', function(ev) {
+      updateMetaTags();
+
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
@@ -57,5 +85,8 @@
       });
     });
   </script>
+  <script src="flutter.js" defer></script>
+</head>
+<body>
 </body>
 </html>
